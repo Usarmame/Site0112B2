@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(58, 152, 246, 0.723);
+    header{
+         background-color: rgba(58, 152, 246, 0.723);
+        h1{  
+           padding: 20px;
+           text-align:center;
+        }
+    }
+}

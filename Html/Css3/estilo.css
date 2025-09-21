@@ -18,7 +18,7 @@
            font-size: 2.1em;
            color: aliceblue;
         }
-
+      
     }
 
     nav{
@@ -58,7 +58,15 @@
     main > section {
         padding: 15px;
         border-radius: 5px;
-        background-color: ;
+        background-color: #f2f4f7;
+    }
+
+   main section span {
+        background-color: #f2f4f7;
+        .negro{
+           /*font-weight: 400;*/
+         
+        }
     }
 
     footer{

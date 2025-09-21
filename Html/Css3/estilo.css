@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +14,10 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
+
+
 header {
-    background: linear-gradient(90deg, #3a98f6 60%, #1e5fa3 100%);
+    background: linear-gradient(90deg, #3a98f6 0%, #5fc3e4 50%, #1e5fa3 100%);
     color: #fff;
     padding: 24px 0 0 0;
     text-align: center;

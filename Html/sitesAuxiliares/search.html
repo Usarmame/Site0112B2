@@ -42,6 +42,88 @@
         .form-candidatura button:hover {
             background: #1e5fa3;
         }
+
+        /* ...existing code... */
+
+/* Responsividade para telas médias e pequenas */
+@media (max-width: 700px) {
+    .form-candidatura {
+        max-width: 95vw;
+        padding: 16px;
+        margin: 16px auto;
+    }
+    .form-candidatura h2 {
+        font-size: 1.3em;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    footer {
+        font-size: 0.95em;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-candidatura {
+        padding: 8px;
+    }
+    .form-candidatura label {
+        font-size: 1em;
+    }
+    .form-candidatura input,
+    .form-candidatura textarea,
+    .form-candidatura select {
+        font-size: 0.95em;
+        padding: 6px;
+    }
+    .form-candidatura button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    header h1 {
+        font-size: 1.3em;
+    }
+    main {
+        padding: 4px;
+    }
+}
+/* ...existing code... */
+
+@media (min-width: 1200px) {
+    .form-candidatura {
+        max-width: 700px;
+        padding: 48px;
+        font-size: 1.15em;
+    }
+    .form-candidatura h2 {
+        font-size: 2em;
+        margin-bottom: 32px;
+    }
+    .form-candidatura label {
+        font-size: 1.15em;
+    }
+    .form-candidatura input,
+    .form-candidatura textarea,
+    .form-candidatura select {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+    .form-candidatura button {
+        font-size: 1.1em;
+        padding: 14px 32px;
+    }
+    header h1 {
+        font-size: 3em;
+    }
+    main {
+        padding: 32px 0;
+    }
+    footer {
+        font-size: 1.1em;
+        padding: 24px 0;
+    }
+}
     </style>
 </head>
 <body>

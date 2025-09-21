@@ -105,9 +105,11 @@ footer a:hover {
 }
 
 /* Responsividade */
+/* Responsividade para telas médias e pequenas */
 @media (max-width: 700px) {
     main {
         padding: 16px;
+        max-width: 98vw;
     }
     nav ul {
         flex-direction: column;
@@ -115,5 +117,55 @@ footer a:hover {
     }
     header h1 {
         font-size: 2em;
+    }
+    .original {
+        font-size: 1em;
+    }
+    footer {
+        font-size: 0.95em;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 8px;
+    }
+    header h1 {
+        font-size: 1.3em;
+    }
+    nav ul a {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+    .original {
+        font-size: 0.95em;
+    }
+    footer {
+        font-size: 0.9em;
+        padding: 8px 0;
+    }
+}
+
+/* Responsividade para telas grandes (PCs e TVs) */
+@media (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        padding: 48px;
+        font-size: 1.15em;
+    }
+    header h1 {
+        font-size: 3em;
+    }
+    nav ul a {
+        font-size: 1.2em;
+        padding: 12px 28px;
+    }
+    .original {
+        font-size: 1.2em;
+    }
+    footer {
+        font-size: 1.1em;
+        padding: 24px 0;
     }
 }

@@ -3,9 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anunciante de Vagas</title>
+    <title>Login do Anunciante | EmpregaMoz</title>
+    <link rel="stylesheet" href="../Css3/estilo.css">
+    <style>
+        .painel-anunciante {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 16px rgba(58,152,246,0.07);
+        }
+        .painel-anunciante h2 {
+            margin-bottom: 24px;
+            font-size: 1.6em;
+            color: #1e5fa3;
+        }
+        .painel-anunciante label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .painel-anunciante input,
+        .painel-anunciante select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 18px;
+            border: 1px solid #d0d7e2;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .painel-anunciante button {
+            background: #3a98f6;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-bottom: 16px;
+        }
+        .painel-anunciante button:hover {
+            background: #1e5fa3;
+        }
+        .painel-opcoes {
+            margin-top: 32px;
+            border-top: 1px solid #d0d7e2;
+            padding-top: 24px;
+        }
+        .painel-opcoes h3 {
+            color: #3a98f6;
+            margin-bottom: 16px;
+        }
+        .painel-opcoes ul {
+            list-style: none;
+            padding: 0;
+        }
+        .painel-opcoes li {
+            margin-bottom: 12px;
+        }
+        .pacotes {
+            margin-top: 24px;
+        }
+        .pacotes label {
+            font-weight: 500;
+        }
+        .pacotes select {
+            margin-bottom: 18px;
+        }
+
+        /* Responsividade para telas médias e pequenas */
+        @media (max-width: 700px) {
+            .painel-anunciante {
+                max-width: 98vw;
+                padding: 16px;
+                margin: 16px auto;
+            }
+            .painel-anunciante h2 {
+                font-size: 1.3em;
+            }
+            .painel-opcoes h3 {
+                font-size: 1.1em;
+            }
+        }
+        @media (max-width: 480px) {
+            .painel-anunciante {
+                padding: 8px;
+            }
+            .painel-anunciante label {
+                font-size: 1em;
+            }
+            .painel-anunciante input,
+            .painel-anunciante select {
+                font-size: 0.95em;
+                padding: 6px;
+            }
+            .painel-anunciante button {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+            .painel-opcoes h3 {
+                font-size: 1em;
+            }
+        }
+        /* Responsividade para PCs e TVs */
+        @media (min-width: 1200px) {
+            .painel-anunciante {
+                max-width: 900px;
+                padding: 48px;
+                font-size: 1.15em;
+            }
+            .painel-anunciante h2 {
+                font-size: 2em;
+            }
+            .painel-anunciante label {
+                font-size: 1.15em;
+            }
+            .painel-anunciante input,
+            .painel-anunciante select {
+                font-size: 1.1em;
+                padding: 12px;
+            }
+            .painel-anunciante button {
+                font-size: 1.1em;
+                padding: 14px 32px;
+            }
+            .painel-opcoes h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>EmpregaMoz</h1>
+    </header>
+    <main>
+        <form class="painel-anunciante">
+            <h2>Login / Cadastro Institucional</h2>
+            <label for="tipoInstituicao">Tipo de Instituição</label>
+            <select id="tipoInstituicao" name="tipoInstituicao" required>
+                <option value="">Selecione...</option>
+                <option value="empresa">Empresa</option>
+                <option value="ong">ONG</option>
+                <option value="instituicao_publica">Instituição Pública</option>
+                <option value="centro_formacao">Centro de Formação</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="nomeRepresentante">Nome do Representante</label>
+            <input type="text" id="nomeRepresentante" name="nomeRepresentante" required>
+
+            <label for="email">Email institucional</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Entrar / Cadastrar</button>
+
+            <div class="painel-opcoes">
+                <h3>Painel do Anunciante</h3>
+                <ul>
+                    <li><button type="button">Publicar Vagas</button></li>
+                    <li><button type="button">Visualizar Candidatos</button></li>
+                    <li><button type="button">Marcar Entrevistas</button></li>
+                </ul>
+                <div class="pacotes">
+                    <label for="pacote">Pacote de Publicação</label>
+                    <select id="pacote" name="pacote">
+                        <option value="gratis">Grátis (até 2 vagas)</option>
+                        <option value="basico">Básico (até 10 vagas)</option>
+                        <option value="premium">Premium (ilimitado)</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy; EMPREGAMOZ 2025</p>
+    </footer>
 </body>
 </html>

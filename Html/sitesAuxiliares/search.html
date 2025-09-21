@@ -3,24 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidaturas</title>
+    <title>Candidatar-se | EmpregaMoz</title>
+    <link rel="stylesheet" href="../Css3/estilo.css">
     <style>
-        *{
-            background-color: rgb(84, 172, 84);
+        .form-candidatura {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 16px rgba(58,152,246,0.07);
         }
-
-        header > h1 {
-            color: rgb(255, 255, 255);
-            font-size: 1.5em;
-            font-family: ;
+        .form-candidatura label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .form-candidatura input,
+        .form-candidatura textarea,
+        .form-candidatura select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 18px;
+            border: 1px solid #d0d7e2;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .form-candidatura button {
+            background: #3a98f6;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .form-candidatura button:hover {
+            background: #1e5fa3;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>
-            Vagas
-        </h1>
+        <h1>EmpregaMoz</h1>
     </header>
+    <main>
+        <form class="form-candidatura" enctype="multipart/form-data">
+            <h2>Candidatar-se à vaga</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="ultimoLocal">Último local onde trabalhou</label>
+            <input type="text" id="ultimoLocal" name="ultimoLocal">
+
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+
+            <label for="area">Área de especialização</label>
+            <input type="text" id="area" name="area" required>
+
+            <label for="tempo">Tempo no último local (meses/anos)</label>
+            <input type="text" id="tempo" name="tempo">
+
+            <label for="trabalhou">Já trabalhou?</label>
+            <select id="trabalhou" name="trabalhou">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="cv">Currículo (CV)</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+
+            <label for="educacao">Educação</label>
+            <textarea id="educacao" name="educacao" rows="3" placeholder="Descreva sua formação acadêmica"></textarea>
+
+            <button type="submit">Enviar candidatura</button>
+        </form>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy; EMPREGAMOZ 2025</p>
+    </footer>
 </body>
 </html>
